@@ -1,0 +1,121 @@
+:root {
+    --body-bg: #282c34;
+    --main-color: #949494a6;
+    --dark-color: #474747;
+    --error-color: #ff0505;
+    --font-large: calc(7px + 2vmin);
+    --font-medium: calc(3px + 2vmin);
+    --font-small: calc(2px + 2vmin);
+}
+
+body {
+    margin: 0;
+    background-color: var(--body-bg);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 2%;
+}
+
+body,
+.addNotes,
+.notesList,
+.note {
+    box-sizing: border-box;
+}
+
+p {
+    margin: 0;
+}
+
+input {
+    width: 100%;
+    padding: 2% 0;
+    border-top-style: hidden;
+    border-right-style: hidden;
+    border-left-style: hidden;
+    border-bottom-style: groove;
+    border-color: var(--main-color);
+    color: var(--dark-color);
+}
+
+input,
+.errorText {
+    font-size: var(--font-small);
+}
+
+input:focus {
+    outline: none;
+}
+
+.inputError {
+    border-color: var(--error-color);
+}
+
+.inputCheck {
+    border-color: var(--dark-color);
+}
+
+.errorText {
+    color: var(--error-color);
+}
+
+.app {
+    width: 50%;
+    background: #ffff;
+    margin: auto;
+}
+
+.addNotes {
+    width: 100%;
+    padding: 10% 3% 3%;
+}
+
+.notesList {
+    padding: 1%;
+}
+
+.title,
+.note {
+    font-size: var(--font-medium);
+}
+
+.note {
+    display: flex;
+    margin-bottom: 1%;
+    padding: 1%;
+    border-radius: 5px;
+    border: 2px solid var(--main-color);
+}
+
+.noteText,
+.mainTitle {
+    font-size: var(--font-large);
+}
+
+.noteText {
+    width: 60%;
+    word-wrap: break-word;
+}
+
+.noteInfo,
+.noteDel,
+.mainTitle {
+    text-align: center;
+}
+
+.noteInfo {
+    width: 30%;
+}
+
+.noteDel {
+    font-size: 1.5em;
+    cursor: pointer;
+    width: 10%;
+}
+
+.mainTitle {
+    padding-top: 3%;
+    font-weight: bold;
+}
