@@ -1,4 +1,4 @@
-# Short notes app. [Demo](https://vladnew91-todo-list.netlify.app/)
+# Short notes app. [Demo](https://shortnotes-app-vladnew91.netlify.app/)
 
 ## Application description:
 
